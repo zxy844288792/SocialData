@@ -1,29 +1,49 @@
-from _gexf import *
+from xml.dom import minidom
 import pandas as pd
-from dateutil.parser import parse
 
-
-blogdata = Gexf("xingyu zhou","response data")
-graph = blogdata.addGraph('directed','dynamic','graph','dateTime')
-fileobj = pd.read_csv('node.csv')
-for row in fileobj.iterrows():
-	start = str(parse(row[1][1]))	
-	end = str(parse(row[1][2]))
-	start = start.split()[0] + 'T' + start.split()[1]
-	#start = start.split()[0]
-	#end = end.split()[0] + 'T' + end.split()[1]
-	graph.addNode(row[1][0],row[1][0],start = start,r='78',g='23',b='232')
-fileobj = pd.read_csv('connection_all.csv')
+fileobj =  open('me274basicmechanicsii.wordpress.2016-01-05.xml')
+fileobj2 = open('me274_2016New.xml','w')
+NameMap = dict()
 x = 0
-for row in fileobj.iterrows():
-	start = str(parse(row[1][2]))
-	end = str(parse(row[1][3]))
-
-	start = start.split()[0] + 'T' + start.split()[1]
-	#end = end.split()[0] + 'T' + end.split()[1]
-	graph.addEdge(x,row[1][0],row[1][1],start =start)
-	x += 1
-
-
-output_file=open("helloworld.gexf","w")
-blogdata.write(output_file)
+for line in fileobj:
+	if('wp:author_email') in line:
+		name = line.split('wp:author_email')[1].split('>')[1].split('<')[0]
+		if name not in NameMap:
+			AnnName = str(x)+'@purdue.edu'
+			NameMap[name] = AnnName
+			x += 1
+		else:
+			AnnName = NameMap[name]
+		newline = line.replace(name,AnnName)
+		newline = newline.replace(name.replace('@purdue.edu',''),AnnName.replace('@purdue.edu',''))
+		fileobj2.write(newline)
+	elif("wp:comment_author_email") in line:
+		name = line.split('>')[1].split('<')[0]
+		if name not in NameMap:
+			AnnName = str(x)+'@purdue.edu'
+			NameMap[name] = AnnName
+			x += 1
+		else:
+			AnnName = NameMap[name]
+		newline = line.replace(name,AnnName)
+		fileobj2.write(newline)
+	elif("wp:comment_author") in line and 'CDATA' in line:
+	#	name = line.split('comment_author')[1].split('CDATA[')[1].split(']')[0]+ '@purdue.edu'
+	#	print(name)
+	#	fileobj2.write(line)
+		sss=1
+	elif "dc:creator" in line:
+		name = line.split('<dc:creator>')[1].split('CDATA[')[1].split(']')[0]+ '@purdue.edu'
+		
+		if name not in NameMap:
+			AnnName = str(x)+'@purdue.edu'
+			NameMap[name] = AnnName
+			x += 1
+		else:
+			AnnName = NameMap[name]
+		newline = line.replace(name,AnnName)
+		newline = newline.replace(name.replace('@purdue.edu',''),AnnName.replace('@purdue.edu',''))
+		fileobj2.write(newline)
+	else:
+		fileobj2.write(line)
+pd.DataFrame.from_dict(NameMap,orient = 'index').to_csv('NameMap_2016.csv')

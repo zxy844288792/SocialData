@@ -12,8 +12,12 @@ from itertools import combinations
 import csv
 
 
-data = pd.read_csv("sna_purdue_deidentified.csv",index_col = 'id',low_memory=False)
-
+data = pd.read_csv("analysis_2015.csv",low_memory=False)
+for row in data.itertuples():
+    initial = row[4].split(' ')
+    initial.remove('')
+    print(initial)
+'''
 node2 = dict()
 edge = []
 y = 0
@@ -43,3 +47,5 @@ wr = csv.writer(myfile)
 for edge_data in edge:
     
     wr.writerow(edge_data)
+
+'''

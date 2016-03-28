@@ -21,9 +21,12 @@ for childroot in root:
 				commentList = []
 				commentStirng = ''
 				commentDateString = ''
+				parent = ''
+				iden = ''
 			for data in unknown:
 				if 'comment_id' in data.tag:
-					print('comment_id: '+data.text)
+					iden += data.text + ' '
+					tempdict['id'] = iden
 				elif 'comment_author_email' in data.tag:
 					#print('comment_author_email: ' + data.text)
 					commentStirng = commentStirng + data.text + ' '
@@ -33,7 +36,8 @@ for childroot in root:
 					tempdict['commenter_time'] = commentDateString
 					#print('comment_date: '+data.text)
 				elif 'comment_parent' in data.tag:
-					print('comment_parent: '+data.text)	
+					parent += data.text + ' '
+					tempdict['parent'] = parent
 		if(len(tempdict)  > 1):
 			overdict[countNumber] = tempdict
 			countNumber += 1

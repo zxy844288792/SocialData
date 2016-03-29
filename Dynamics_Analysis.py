@@ -1,3 +1,6 @@
+'''
+This script is used to extract data we need from the xml file
+'''
 import lxml
 from xmlutils.xml2csv import xml2csv
 import pandas as pd
@@ -9,12 +12,17 @@ countNumber = 0
 tree = ET.parse('me274_2015New.xml')
 root = tree.getroot()
 for childroot in root:
+
 	for item in childroot:
-		tempdict = dict()
-		#print("zzzzzzzzzzzzzzzzzzzzzcountNumber: "+str(countNumber))
-		
-		
+		'''
+		Each item is a thread in the blog
+		'''
+		tempdict = dict()	
+
 		for unknown in item:
+			'''
+			Each unkown is the information in the thread	
+			'''
 			if 'post_date' in unknown.tag and 'gmt' not in unknown.tag:
 					tempdict['post_date'] = unknown.text
 			if 'creator' in unknown.tag:
@@ -26,6 +34,9 @@ for childroot in root:
 				parent = ''
 				iden = ''
 			for data in unknown:
+				'''
+				Each data is the information related to the comment
+				'''
 				if 'comment_id' in data.tag:
 					iden += data.text + ' '
 					tempdict['id'] = iden

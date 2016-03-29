@@ -1,11 +1,21 @@
+'''
+This file is used to anonymous some information
+'''
+
 from xml.dom import minidom
 import pandas as pd
 
 fileobj =  open('me274basicmechanicsii.wordpress.2015-08-17.xml')
+'''
+The new file which delete identity information
+'''
 fileobj2 = open('me274_2015New.xml','w')
 NameMap = dict()
 x = 0
 for line in fileobj:
+	'''
+
+	'''
 	if('wp:author_email') in line:
 		name = line.split('wp:author_email')[1].split('>')[1].split('<')[0]
 		if name not in NameMap:

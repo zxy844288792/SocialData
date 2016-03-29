@@ -1,8 +1,8 @@
 from xml.dom import minidom
 import pandas as pd
 
-fileobj =  open('me274basicmechanicsii.wordpress.2016-01-05.xml')
-fileobj2 = open('me274_2016New.xml','w')
+fileobj =  open('me274basicmechanicsii.wordpress.2015-08-17.xml')
+fileobj2 = open('me274_2015New.xml','w')
 NameMap = dict()
 x = 0
 for line in fileobj:
@@ -46,4 +46,4 @@ for line in fileobj:
 		fileobj2.write(newline)
 	else:
 		fileobj2.write(line)
-pd.DataFrame.from_dict(NameMap,orient = 'index').to_csv('NameMap_2016.csv')
+pd.DataFrame.from_dict(NameMap,orient = 'index').to_csv('NameMap_2015.csv')

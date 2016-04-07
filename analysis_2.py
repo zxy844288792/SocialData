@@ -29,8 +29,8 @@ for childroot in root:
 				commentDateString = ''
 				parent = ''
 				iden = ''
-			#if 'post_date' in unknown.tag and 'gmt' not in unknown.tag:
-			#	tempdict['post_date'] = unknown.text
+			if 'post_date' in unknown.tag and 'gmt' not in unknown.tag:
+				post_date = unknown.text
 			tempdict = dict()
 			tempdict['poster'] = poster
 			for data in unknown:
@@ -52,6 +52,7 @@ for childroot in root:
 					parent = data.text
 					tempdict['parent'] = parent
 			if(len(tempdict)  > 2):
+				tempdict['post_date'] = post_date
 				overdict[countNumber] = tempdict
 				countNumber += 1
 pd.DataFrame.from_dict(overdict,orient = 'index').to_csv('analysis_2015_new.csv')

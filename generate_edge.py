@@ -13,9 +13,9 @@ for row in data.itertuples():
 	tempdict = dict()
 	poster = row[3]
 	commenter = row[4]
-	comment_id = row[5]
-	parent = row[6]
-	current = row[2]
+	comment_id = row[7]
+	parent = row[2]
+	current = row[6]
 	directmap[comment_id] = commenter
 	if parent == 0:
 		tempdict['commenter'] = commenter
@@ -28,4 +28,4 @@ for row in data.itertuples():
 	overdict[count] = tempdict
 	count += 1
 
-pd.DataFrame.from_dict(overdict,orient = 'index').to_csv('edge_2015.csv')
+pd.DataFrame.from_dict(overdict,orient = 'index').to_csv('edge_2015_new.csv')

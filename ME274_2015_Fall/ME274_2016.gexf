@@ -1,128 +1,50 @@
 <?xml version='1.0' encoding='utf-8'?>
 <gexf xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.gephi.org/gexf/1.2draft" xmlns:ns0="xsi" version="1.2" ns0:schemaLocation="http://www.gephi.org/gexf/1.1draft http://gephi.org/gexf/1.2draft.xsd">
-  <meta lastmodified="2016-06-03">
+  <meta lastmodified="2016-09-08">
     <creator>Yuqin Duan</creator>
     <description>ME274_2016</description>
   </meta>
   <graph defaultedgetype="directed" label="graph" mode="dynamic" timeformat="dateTime">
     <nodes>
-      <node id="0@purdue.edu" label="0@purdue.edu" start="2015-08-26T12:00:28">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="10@purdue.edu" label="10@purdue.edu" start="2015-09-24T13:14:31">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="11@purdue.edu" label="11@purdue.edu" start="2015-09-28T09:33:57">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="12@purdue.edu" label="12@purdue.edu" start="2015-09-28T09:37:01">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="13@purdue.edu" label="13@purdue.edu" start="2015-09-29T12:26:19">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="14@purdue.edu" label="14@purdue.edu" start="2015-10-04T23:28:49">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="15@purdue.edu" label="15@purdue.edu" start="2015-10-05T23:09:02">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="16@purdue.edu" label="16@purdue.edu" start="2015-10-06T15:25:16">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="17@purdue.edu" label="17@purdue.edu" start="2015-10-07T01:56:20">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="18@purdue.edu" label="18@purdue.edu" start="2015-10-06T15:58:57">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="19@purdue.edu" label="19@purdue.edu" start="2015-10-06T17:06:13">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="20@purdue.edu" label="20@purdue.edu" start="2015-10-06T20:17:17">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="21@purdue.edu" label="21@purdue.edu" start="2015-10-08T15:27:05">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="22@purdue.edu" label="22@purdue.edu" start="2015-10-13T12:42:40">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="23@purdue.edu" label="23@purdue.edu" start="2015-10-13T16:13:32">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="24@purdue.edu" label="24@purdue.edu" start="2015-10-13T20:21:57">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="25@purdue.edu" label="25@purdue.edu" start="2015-10-14T16:15:57">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="26@purdue.edu" label="26@purdue.edu" start="2015-10-15T15:46:14">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="27@purdue.edu" label="27@purdue.edu" start="2015-10-18T13:49:26">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="28@purdue.edu" label="28@purdue.edu" start="2015-10-20T16:09:34">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="29@purdue.edu" label="29@purdue.edu" start="2015-10-22T18:08:34">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="2@purdue.edu" label="2@purdue.edu" start="2015-08-27T16:21:20">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="30@purdue.edu" label="30@purdue.edu" start="2015-10-22T20:31:04">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="31@purdue.edu" label="31@purdue.edu" start="2015-10-25T22:02:24">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="32@purdue.edu" label="32@purdue.edu" start="2015-11-01T18:25:51">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="33@purdue.edu" label="33@purdue.edu" start="2015-11-08T18:23:13">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="34@purdue.edu" label="34@purdue.edu" start="2015-11-09T09:47:45">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="35@purdue.edu" label="35@purdue.edu" start="2015-11-10T22:49:15">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="36@purdue.edu" label="36@purdue.edu" start="2015-11-12T23:39:07">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="37@purdue.edu" label="37@purdue.edu" start="2015-11-13T12:30:46">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="38@purdue.edu" label="38@purdue.edu" start="2015-12-11T12:45:50">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="39@purdue.edu" label="39@purdue.edu" start="2015-12-08T18:17:07">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="3@purdue.edu" label="3@purdue.edu" start="2015-08-26T20:33:10">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="4@purdue.edu" label="4@purdue.edu" start="2015-08-26T21:34:43">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="5@purdue.edu" label="5@purdue.edu" start="2015-08-26T21:46:33">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="6@purdue.edu" label="6@purdue.edu" start="2015-08-27T11:59:00">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="7@purdue.edu" label="7@purdue.edu" start="2015-08-27T14:15:01">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="8@purdue.edu" label="8@purdue.edu" start="2015-08-27T21:40:01">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
-      <node id="9@purdue.edu" label="9@purdue.edu" start="2015-09-08T01:00:51">
-        <ns0:color xmlns:ns0="http://www.gexf.net/1.1draft/viz" r="78" g="23" b="232"/>
-      </node>
+      <node id="0@purdue.edu" label="0@purdue.edu" start="2015-08-26T12:00:28"/>
+      <node id="10@purdue.edu" label="10@purdue.edu" start="2015-09-24T13:14:31"/>
+      <node id="11@purdue.edu" label="11@purdue.edu" start="2015-09-28T09:33:57"/>
+      <node id="12@purdue.edu" label="12@purdue.edu" start="2015-09-28T09:37:01"/>
+      <node id="13@purdue.edu" label="13@purdue.edu" start="2015-09-29T12:26:19"/>
+      <node id="14@purdue.edu" label="14@purdue.edu" start="2015-10-04T23:28:49"/>
+      <node id="15@purdue.edu" label="15@purdue.edu" start="2015-10-05T23:09:02"/>
+      <node id="16@purdue.edu" label="16@purdue.edu" start="2015-10-06T15:25:16"/>
+      <node id="17@purdue.edu" label="17@purdue.edu" start="2015-10-07T01:56:20"/>
+      <node id="18@purdue.edu" label="18@purdue.edu" start="2015-10-06T15:58:57"/>
+      <node id="19@purdue.edu" label="19@purdue.edu" start="2015-10-06T17:06:13"/>
+      <node id="20@purdue.edu" label="20@purdue.edu" start="2015-10-06T20:17:17"/>
+      <node id="21@purdue.edu" label="21@purdue.edu" start="2015-10-08T15:27:05"/>
+      <node id="22@purdue.edu" label="22@purdue.edu" start="2015-10-13T12:42:40"/>
+      <node id="23@purdue.edu" label="23@purdue.edu" start="2015-10-13T16:13:32"/>
+      <node id="24@purdue.edu" label="24@purdue.edu" start="2015-10-13T20:21:57"/>
+      <node id="25@purdue.edu" label="25@purdue.edu" start="2015-10-14T16:15:57"/>
+      <node id="26@purdue.edu" label="26@purdue.edu" start="2015-10-15T15:46:14"/>
+      <node id="27@purdue.edu" label="27@purdue.edu" start="2015-10-18T13:49:26"/>
+      <node id="28@purdue.edu" label="28@purdue.edu" start="2015-10-20T16:09:34"/>
+      <node id="29@purdue.edu" label="29@purdue.edu" start="2015-10-22T18:08:34"/>
+      <node id="2@purdue.edu" label="2@purdue.edu" start="2015-08-27T16:21:20"/>
+      <node id="30@purdue.edu" label="30@purdue.edu" start="2015-10-22T20:31:04"/>
+      <node id="31@purdue.edu" label="31@purdue.edu" start="2015-10-25T22:02:24"/>
+      <node id="32@purdue.edu" label="32@purdue.edu" start="2015-11-01T18:25:51"/>
+      <node id="33@purdue.edu" label="33@purdue.edu" start="2015-11-08T18:23:13"/>
+      <node id="34@purdue.edu" label="34@purdue.edu" start="2015-11-09T09:47:45"/>
+      <node id="35@purdue.edu" label="35@purdue.edu" start="2015-11-10T22:49:15"/>
+      <node id="36@purdue.edu" label="36@purdue.edu" start="2015-11-12T23:39:07"/>
+      <node id="37@purdue.edu" label="37@purdue.edu" start="2015-11-13T12:30:46"/>
+      <node id="38@purdue.edu" label="38@purdue.edu" start="2015-12-11T12:45:50"/>
+      <node id="39@purdue.edu" label="39@purdue.edu" start="2015-12-08T18:17:07"/>
+      <node id="3@purdue.edu" label="3@purdue.edu" start="2015-08-26T20:33:10"/>
+      <node id="4@purdue.edu" label="4@purdue.edu" start="2015-08-26T21:34:43"/>
+      <node id="5@purdue.edu" label="5@purdue.edu" start="2015-08-26T21:46:33"/>
+      <node id="6@purdue.edu" label="6@purdue.edu" start="2015-08-27T11:59:00"/>
+      <node id="7@purdue.edu" label="7@purdue.edu" start="2015-08-27T14:15:01"/>
+      <node id="8@purdue.edu" label="8@purdue.edu" start="2015-08-27T21:40:01"/>
+      <node id="9@purdue.edu" label="9@purdue.edu" start="2015-09-08T01:00:51"/>
     </nodes>
     <edges>
       <edge id="0" source="0@purdue.edu" target="3@purdue.edu" start="2015-08-26T20:33:00"/>
